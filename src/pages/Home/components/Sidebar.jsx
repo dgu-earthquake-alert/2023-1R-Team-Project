@@ -1,9 +1,7 @@
 import { useEffect, useState, useRef } from "react";
-import styles from "../../styles/home/sidebar.module.css";
-import { fetchMapPlaceData } from "../../utils/api";
-import remove from "../../assets/icon/remove-filled.svg";
-import { Mobile, PC } from "../../utils/MediaQuery";
-import { is } from "date-fns/locale";
+import styles from "../../../styles/home/sidebar.module.css";
+import { fetchMapPlaceData } from "../../../utils/api";
+import remove from "../../../assets/icon/remove-filled.svg";
 import { useMediaQuery } from "react-responsive";
 
 const Sidebar = ({

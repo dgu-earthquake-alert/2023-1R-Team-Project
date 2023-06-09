@@ -1,9 +1,9 @@
 import React, { useEffect, useCallback, useState } from "react";
-import Sidebar from "../components/home/Sidebar";
-import GoogleMap from "../components/home/GoogleMap";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import styles from "../styles/home/home.module.css";
+import Sidebar from "./components/Sidebar";
+import GoogleMap from "./components/GoogleMap";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import styles from "../../styles/home/home.module.css";
 import Draggable from "react-draggable"; // The default
 
 function Home() {

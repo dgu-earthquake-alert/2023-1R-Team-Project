@@ -1,13 +1,13 @@
 // Shelter.jsx
 import React, { useState, useEffect } from "react";
-import GuDropdown from "../components/shelter/GuDropdown";
-import DongDropdown from "../components/shelter/DongDropdown";
-import ShelterTable from "../components/shelter/ShelterTable";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import "../styles/shelter/dropdown.css";
+import GuDropdown from "./components/GuDropdown";
+import DongDropdown from "./components/DongDropdown";
+import ShelterTable from "./components/ShelterTable";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import "../../styles/shelter/dropdown.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { fetchShelterTableData } from "../utils/api";
+import { fetchShelterTableData } from "../../utils/api";
 
 const Shelter = () => {
   const [gu, setGu] = useState("-");

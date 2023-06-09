@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import DistrictSelector from "./DistrictSelector";
-import { fetchMapPlaceData } from "../../utils/api";
-import styles from "../../styles/home/home.module.css";
+import { fetchMapPlaceData } from "../../../utils/api";
+import styles from "../../../styles/home/home.module.css";
 
 const GoogleMap = ({
   lat,

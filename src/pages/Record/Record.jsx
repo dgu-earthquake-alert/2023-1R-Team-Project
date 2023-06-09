@@ -3,12 +3,12 @@ import { useMediaQuery } from "react-responsive";
 import DatePicker from "react-datepicker";
 import { ko } from "date-fns/locale";
 import "react-datepicker/dist/react-datepicker.css";
-import "../styles/record/datepicker.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import SiDropdown from "../components/record/SiDropdown";
-import RecordTable from "../components/record/RecordTable";
-import { fetchRecordTableData } from "../utils/api";
+import "../../styles/record/datepicker.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import SiDropdown from "./components/SiDropdown";
+import RecordTable from "./components/RecordTable";
+import { fetchRecordTableData } from "../../utils/api";
 
 const Record = () => {
   const [startDate, setStartDate] = useState(new Date("2018-01-01"));
