@@ -4,7 +4,7 @@ import GoogleMap from "./components/GoogleMap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styles from "../../styles/home/home.module.css";
-import Draggable from "react-draggable"; // The default
+import Memo from "./components/Memo";
 
 function Home() {
   const [map, setMap] = useState(null);
@@ -20,6 +20,10 @@ function Home() {
 
   const saveLocation = () => {
     localStorage.setItem("location", location);
+  };
+
+  const updateMemo = (newShleterMemo) => {
+    setShelterMemo(newShleterMemo);
   };
 
   const closeMemo = (memoId) => {
@@ -152,41 +156,17 @@ function Home() {
         updateMapCenter={updateMapCenter}
       />
       <main className={`${styles.main} ${isSidebarOpen ? styles.open : ""}`}>
-        {shelterMemo.map((shelter) =>
-          shelter.open ? (
-            <Draggable key={shelter.id}>
-              <div className={styles.sticky_note}>
-                <textarea
-                  className={styles.sticky_note_textarea}
-                  value={shelter.description}
-                  onChange={(e) => {
-                    const updatedShelterMemo = shelterMemo.map((s) => {
-                      if (s.id === shelter.id) {
-                        return { ...s, description: e.target.value };
-                      }
-                      return s;
-                    });
-                    setShelterMemo(updatedShelterMemo);
-                  }}
-                  maxLength={100}
-                />
-                <div className={styles.sticky_note_button_container}>
-                  <span
-                    onClick={() => closeMemo(shelter.id)}
-                    className={styles.sticky_note_close}
-                  >
-                    닫기
-                  </span>
-                  <span
-                    onClick={() => removeMemo(shelter.id)}
-                    className={styles.sticky_note_remove}
-                  >
-                    삭제
-                  </span>
-                </div>
-              </div>
-            </Draggable>
-          ) : null
+        {shelterMemo.map(
+          (shelter) =>
+            shelter.open && (
+              <Memo
+                shelter={shelter}
+                shelterMemo={shelterMemo}
+                updateMemo={updateMemo}
+                closeMemo={closeMemo}
+                removeMemo={removeMemo}
+              />
+            )
         )}
 
         <div className={styles.map_title}>내 주변 대피소를 찾아보세요.</div>
