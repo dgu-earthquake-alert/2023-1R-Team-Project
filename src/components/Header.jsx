@@ -11,8 +11,6 @@ const Header = ({ isSidebarOpen, toggleHeader }) => {
   const location = useLocation();
   const [selectedItem, setSelectedItem] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
-  const [userInfo, setUserInfo] = useState({});
 
   useEffect(() => {
     setSelectedItem(location.pathname);

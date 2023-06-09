@@ -26,7 +26,7 @@ const Sidebar = ({
   ); // Store bookmarks
   const nearbyShelterRef = useRef([]); // 주변 대피소 정보
   const [isRemoveToggle, setIsRemoveToggle] = useState(false); // 북마크 삭제버튼 클릭 여부
-  const [showToast, setShowToast] = useState(false); // State variable to track toast visibility
+  const [showToast, setShowToast] = useState(false); // 토스트 표시 여부
 
   let topValue =
     70 +
