@@ -12,7 +12,14 @@ const App = () => {
   return (
     <div className="root">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />}>
+          <Route path="team" element={<Team />} />
+          <Route path="proposal" element={<Proposal />} />
+          <Route path="link" element={<Link />} />
+        </Route>
+
+        <Route path="/home" element={<Home />} />
         <Route path="/shelter" element={<Shelter />} />
         <Route path="/record" element={<Record />} />
         <Route path="/rule" element={<Rule />}>
