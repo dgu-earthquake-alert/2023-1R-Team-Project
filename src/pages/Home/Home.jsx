@@ -6,8 +6,7 @@ import Footer from "../../components/Footer";
 import styles from "../../styles/home/home.module.css";
 import Memo from "./components/Memo";
 
-function Home() {
-  const [map, setMap] = useState(null);
+function Home({ map, setMap }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [shelterMemo, setShelterMemo] = useState(
     JSON.parse(localStorage.getItem("shelterMemo")) || []
