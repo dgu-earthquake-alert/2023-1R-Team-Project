@@ -13,7 +13,7 @@ const Error = () => {
       <div>
         <p className="error_text">잘못된 주소입니다.</p>
         <p className="error_text">다시 한번 확인해 주세요!</p>
-        <Link to="/" className="select_button">
+        <Link to="/home" className="select_button">
           홈으로 돌아가기
         </Link>
       </div>
