@@ -37,8 +37,8 @@
 
 .nav_item {
   all: unset;
-  flex-basis: 135px;
-  height: 75%;
+  flex-basis: 140px;
+  height: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,8 +49,8 @@
   margin: 0 5px;
 }
 
-.nav_item:nth-child(2) {
-  flex-basis: 140px;
+.nav_item:nth-of-type(3) {
+  flex-basis: 135px;
 }
 
 .nav_item:last-child {
@@ -58,13 +58,6 @@
 }
 
 .nav_item:hover {
-  color: #fff;
-  background-color: #052c65;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.nav_item_select {
   font-weight: bold;
   color: #084298;
   background-color: #fff;
@@ -72,9 +65,17 @@
   cursor: pointer;
 }
 
+.nav_item_select {
+  color: #fff;
+  background-color: #052c65;
+  /* border-radius: 10px; */
+  cursor: pointer;
+}
+
 .nav_item_select:hover {
-  color: #084298;
-  background-color: #fff;
+  font-weight: 500;
+  color: #fff;
+  background-color: #052c65;
 }
 
 .nav_toggle {
@@ -113,6 +114,7 @@
     font-size: 21px;
     letter-spacing: 1.5px;
   }
+
   .nav_item {
     position: absolute;
     top: 60px;
@@ -140,15 +142,18 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
   .nav_item:hover,
   .nav_item:active {
     border-radius: 0;
     cursor: pointer;
   }
+
   .nav_item:last-child:hover {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
   .nav_toggle {
     display: flex;
     justify-content: center;

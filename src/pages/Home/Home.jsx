@@ -1,13 +1,12 @@
 import React, { useEffect, useCallback, useState } from "react";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import GoogleMap from "./components/GoogleMap";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import styles from "../../styles/home/home.module.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import styles from "./styles/home.module.css";
 import Memo from "./components/Memo";
 
-function Home() {
-  const [map, setMap] = useState(null);
+function Home({ map, setMap }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [shelterMemo, setShelterMemo] = useState(
     JSON.parse(localStorage.getItem("shelterMemo")) || []
@@ -142,7 +141,7 @@ function Home() {
   }, [map, lat, lng]);
 
   return (
-    <div className="root">
+    <div>
       <Header isSidebarOpen={isSidebarOpen} />
       <Sidebar
         isSidebarOpen={isSidebarOpen}
