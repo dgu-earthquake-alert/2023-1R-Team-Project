@@ -57,7 +57,7 @@ const data = [
       ec2,
       docker
     ],
-    role: "프론트 백엔드 연동 / 랜딩페이지 링크 서브페이지 / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
+    role: "프론트 백엔드 연동 / 랜딩페이지 링크 서브페이지 / 소셜로그인 모달 / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
     github: "https://github.com/roberniro",
     img: hankyulImg
   },

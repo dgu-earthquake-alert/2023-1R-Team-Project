@@ -21,7 +21,7 @@ const Card = ({ data }) => {
               {data.skills.map((skill, index) => (
                 <img key={index} src={skill} alt="Skill" />
               ))}
-              <p className="card-text">
+              <p className="card-text mt-3">
                 Role: <br />
                 {roleLines.map((line, index) => (
                   <span key={index}>
