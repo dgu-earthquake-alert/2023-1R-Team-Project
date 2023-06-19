@@ -1,0 +1,19 @@
+body{
+  background-color: #F3F3F3;
+}
+
+.card_box{
+  width: 1050px;
+  margin: 0 auto; 
+  border-radius: 30px;
+}
+
+.git_btn{
+  background-color: #084298;
+  color: white;
+}
+
+.img{
+  width: 350px;
+  height: 350px;
+}
