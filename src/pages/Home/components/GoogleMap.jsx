@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import DistrictSelector from "./DistrictSelector";
 import { fetchMapPlaceData } from "../../../utils/api";
 import markerImage from "../../../assets/images/marker.png";
+import currentMarkerImage from "../../../assets/images/current.svg";
 import styles from "../../../styles/home/home.module.css";
 
 const GoogleMap = ({
@@ -53,6 +54,18 @@ const GoogleMap = ({
         marker.addListener("click", () => {
           toggleShelterClicked(index, shelter.name);
         });
+      });
+
+      new window.google.maps.Marker({
+        position: { lat, lng },
+        map: newMap,
+        title: "현재 위치",
+        icon: {
+          url: currentMarkerImage,
+          scaledSize: new window.google.maps.Size(40, 40),
+          origin: new window.google.maps.Point(0, 0),
+          anchor: new window.google.maps.Point(15, 15),
+        },
       });
 
       if (newMap instanceof window.google.maps.Map) {
