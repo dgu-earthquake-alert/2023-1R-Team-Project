@@ -22,18 +22,18 @@ const Card = ({ data }) => {
                 <img key={index} src={skill} alt="Skill" />
               ))}
               <p className="card-text">
-  Role: <br />
-  {roleLines.map((line, index) => (
-    <span key={index}>
-      {index === 2 ? (
-        <span className="backend_text">{line}</span>
-      ) : (
-        <>{line}</>
-      )}
-      <br />
-    </span>
-  ))}
-</p>
+                Role: <br />
+                {roleLines.map((line, index) => (
+                  <span key={index}>
+                    {index === 2 ? (
+                      <span className="backend_text">{line}</span>
+                    ) : (
+                      <>{line}</>
+                    )}
+                    <br />
+                  </span>
+                ))}
+              </p>
               <a
                 href={data.github}
                 target="_blank"
