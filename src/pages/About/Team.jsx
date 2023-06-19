@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import soyeonImg from "../../assets/icon/soyeon.PNG";
 import hankyulImg from "../../assets/icon/hankyul.PNG";
 import subinImg from "../../assets/icon/subin.PNG";
-import byulImg from "../../assets/icon/byul.jpg";
+import byulImg from "../../assets/icon/byul.png";
 
 const html5 =
   "https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white";
@@ -57,7 +57,7 @@ const data = [
       ec2,
       docker
     ],
-    role: "프론트 백엔드 연동 / 랜딩페이지 링크 서브페이지 / 소셜로그인 모달 / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
+    role: "프론트 백 연동 / 소셜로그인 모달 / 랜딩페이지(네비게이션, 링크페이지) / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
     github: "https://github.com/roberniro",
     img: hankyulImg
   },
