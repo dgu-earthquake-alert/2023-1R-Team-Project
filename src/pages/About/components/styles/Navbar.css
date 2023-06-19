@@ -5,7 +5,7 @@
   align-items: center;
   width: 100vw;
   height: 64px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   position: relative;
   transition: width 0.3s ease-in-out;
   float: right;
@@ -38,9 +38,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  color: #606060;
+  color: #000;
   font-size: 17px;
-  transition: all 0.1s ease-in-out;
+  /*   transition: all 0.1s ease-in-out;*/
   margin: 0 5px;
 }
 
@@ -55,12 +55,13 @@
 .nav_item:hover {
   color: black;
   text-decoration: underline;
-  font-size: 18px;
+  /* font-size: 18px; */
   cursor: pointer;
 }
 
 .nav_item_select {
   color: black !important;
   text-decoration: underline !important;
+  font-weight: bold;
   cursor: pointer;
 }
