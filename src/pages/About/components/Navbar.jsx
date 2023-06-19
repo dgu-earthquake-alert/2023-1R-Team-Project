@@ -18,7 +18,7 @@ const Navbar = () => {
         className={`${"nav_item"} ${
           selectedItem === "/about/team" ? "nav_item_select" : ""
         }`}
-        to="about/team"
+        to="team"
       >
         팀원 소개
       </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
         className={`${"nav_item"} ${
           selectedItem === "/about/proposal" ? "nav_item_select" : ""
         }`}
-        to="about/proposal"
+        to="proposal"
       >
         기획서
       </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
         className={`${"nav_item"} ${
           selectedItem === "/about/link" ? "nav_item_select" : ""
         }`}
-        to="about/link"
+        to="link"
       >
         링크
       </Link>
