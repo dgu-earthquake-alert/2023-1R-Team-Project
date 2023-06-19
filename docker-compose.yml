@@ -1,0 +1,7 @@
+version: "3.0"
+
+services:
+  web:
+    image: roberniro/2023-1r-team-project:1.0
+    ports:
+      - "80:3000"

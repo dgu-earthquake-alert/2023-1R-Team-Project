@@ -49,6 +49,10 @@
   margin: 0 5px;
 }
 
+.nav_item:nth-of-type(3) {
+  flex-basis: 135px;
+}
+
 .nav_item:last-child {
   flex-basis: 95px;
 }
@@ -110,6 +114,7 @@
     font-size: 21px;
     letter-spacing: 1.5px;
   }
+
   .nav_item {
     position: absolute;
     top: 60px;
@@ -137,15 +142,18 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
   .nav_item:hover,
   .nav_item:active {
     border-radius: 0;
     cursor: pointer;
   }
+
   .nav_item:last-child:hover {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
   .nav_toggle {
     display: flex;
     justify-content: center;

@@ -10,7 +10,7 @@ const Card = () => {
           <span className="content">
             <a
               className="item"
-              href="http://3.34.76.221:3000/home"
+              href="http://3.34.76.221/home"
               alt="지진알리미-FE"
             >
               지진알리미-FE

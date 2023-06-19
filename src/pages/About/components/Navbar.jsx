@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../../../styles/about/Navbar.css";
+import "./styles/Navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="nav">
-      <Link className="nav_title" to="/home">
+      <Link className="nav_title" to="/">
         지진알리미
       </Link>
       <Link

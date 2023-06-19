@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import soyeonImg from "../../assets/icon/soyeon.PNG";
 import hankyulImg from "../../assets/icon/hankyul.PNG";
 import subinImg from "../../assets/icon/subin.PNG";
-import byulImg from "../../assets/icon/byul.jpg";
+import byulImg from "../../assets/icon/byul.png";
 
 const html5 =
   "https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white";
@@ -36,10 +36,10 @@ const data = [
     name: "공소연",
     studentId: "2020110210",
     dept: "경제학과",
-    skills: [html5, css, js, react, figma],
+    skills: [html5, css, js, react, figma, docker],
     role: "랜딩페이지 / 사이드바(현재위치 보기, 위치 기반 가까운 대피소 보기, 위치 저장 기능 등) \n지도에 현재위치 마커출력 / 전체적인 디자인 및 퍼블리싱",
     github: "https://github.com/Kong-E",
-    img: soyeonImg
+    img: soyeonImg,
   },
   {
     name: "민한결",
@@ -55,11 +55,11 @@ const data = [
       mysql,
       ubuntu,
       ec2,
-      docker
+      docker,
     ],
-    role: "프론트 백엔드 연동 / 랜딩페이지 링크 서브페이지 / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
+    role: "프론트 백 연동 / 소셜로그인 모달 / 랜딩페이지(네비게이션, 링크페이지) / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
     github: "https://github.com/roberniro",
-    img: hankyulImg
+    img: hankyulImg,
   },
   {
     name: "이수빈",
@@ -76,21 +76,21 @@ const data = [
       ubuntu,
       ec2,
       docker,
-      firebase
+      firebase,
     ],
     role: "팀장 / 지진 대피소 조회 페이지/ 지진 이력 조회 페이지 / FE&BE프로젝트 배포 \n\n백엔드 연동 test modal / Google Map Info / 지진 경보 백그라운드 푸시 알림 기능",
     github: "https://github.com/bin-pro",
-    img: subinImg
+    img: subinImg,
   },
   {
     name: "한별",
     studentId: "2017112191",
     dept: "정보통신공학과",
-    skills: [html5, css, js, react],
+    skills: [html5, css, js, react, docker],
     role: "팀 소개 페이지 / 행동수칙 페이지 / 에러 페이지 \n지도에 대피소 마커출력 / test modal",
     github: "https://github.com/starht",
-    img: byulImg
-  }
+    img: byulImg,
+  },
 ];
 
 const Team = () => {
