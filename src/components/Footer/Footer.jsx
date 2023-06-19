@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./footer.module.css";
 import { Modal, Button } from "react-bootstrap";
-import EarthquakeModal from "../Modal/EarthquakeModal";
+import EarthquakeModal from "../modal/EarthquakeModal";
 import { fetchEarthquakeData } from "../../utils/api";
 import { useMediaQuery } from "react-responsive";
 
