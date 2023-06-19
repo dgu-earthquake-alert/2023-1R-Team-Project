@@ -15,23 +15,21 @@ const App = () => {
   const [map, setMap] = useState(null);
 
   return (
-    <div className="root">
-      <Routes>
-        <Route path="/" element={<About map={map} setMap={setMap} />} />
-        <Route path="/about" element={<About map={map} setMap={setMap} />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/proposal" element={<Team />} />
-        <Route path="/link" element={<Link />} />
-        <Route path="/home" element={<Home map={map} setMap={setMap} />} />
-        <Route path="/shelter" element={<Shelter />} />
-        <Route path="/record" element={<Record />} />
-        <Route path="/rule" element={<Rule />}>
-          <Route path="subpage1" element={<SubPage1 />} />
-          <Route path="subpage2" element={<SubPage2 />} />
-        </Route>
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<About map={map} setMap={setMap} />} />
+      <Route path="/about" element={<About map={map} setMap={setMap} />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/proposal" element={<Team />} />
+      <Route path="/link" element={<Link />} />
+      <Route path="/home" element={<Home map={map} setMap={setMap} />} />
+      <Route path="/shelter" element={<Shelter />} />
+      <Route path="/record" element={<Record />} />
+      <Route path="/rule" element={<Rule />}>
+        <Route path="subpage1" element={<SubPage1 />} />
+        <Route path="subpage2" element={<SubPage2 />} />
+      </Route>
+      <Route path="*" element={<Error />} />
+    </Routes>
   );
 };
 
