@@ -26,7 +26,7 @@ const AboutMain = ({ map, setMap }) => {
 
       const newMap = new window.google.maps.Map(ref.current, {
         center: { lat: 37.569227, lng: 126.9777256 },
-        zoom: 16,
+        zoom: 16
       });
 
       /*       shelterData.forEach((shelter, index) => {
@@ -62,7 +62,7 @@ const AboutMain = ({ map, setMap }) => {
       <Link to="/home" className={styles.main_button}>
         바로가기&nbsp;&nbsp;&nbsp;&nbsp;&gt;
       </Link>
-      <Link to="/about/team" className={styles.about_button}>
+      <Link to="/team" className={styles.about_button}>
         About
       </Link>
       <img src={markerImage} alt="marker" className={styles.marker} />
