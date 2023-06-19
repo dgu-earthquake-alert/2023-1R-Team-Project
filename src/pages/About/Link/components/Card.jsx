@@ -44,7 +44,7 @@ const Card = () => {
           </span>
         </div>
         <div className="card_footer">
-          공모전 제출용 FE&BE 레포지토리에 이어서 FE 리포지토리에
+          공모전 제출용 FE&BE 리포지토리에 이어서 FE 리포지토리에
           작업하였습니다.
         </div>
       </div>
