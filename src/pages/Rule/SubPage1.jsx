@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../styles/rule/rule.css";
+import "./styles/rule.css";
 
 const SubPage1 = () => {
   return (

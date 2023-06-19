@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import styles from "../styles/header.module.css";
-/* import Login from "./login/Login";
-import Profile from "./login/Profile";
- */
-import menu from "../assets/icon/menu.svg";
-import { PC, Mobile } from "../utils/MediaQuery";
+import styles from "./header.module.css";
+import menu from "../../assets/icon/menu.svg";
+import { PC, Mobile } from "../../utils/MediaQuery";
 
 const Header = ({ isSidebarOpen, toggleHeader }) => {
   const location = useLocation();

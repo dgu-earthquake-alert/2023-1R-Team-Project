@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../styles/rule/rule.css";
+import "./styles/rule.css";
 import { Routes, Route, Link } from "react-router-dom"; // 페이지 이동
 import SubPage1 from "./SubPage1";
 import SubPage2 from "./SubPage2";
