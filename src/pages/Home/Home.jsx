@@ -141,7 +141,7 @@ function Home({ map, setMap }) {
   }, [map, lat, lng]);
 
   return (
-    <div className="root">
+    <div>
       <Header isSidebarOpen={isSidebarOpen} />
       <Sidebar
         isSidebarOpen={isSidebarOpen}
