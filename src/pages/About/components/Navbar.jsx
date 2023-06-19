@@ -16,7 +16,7 @@ const Navbar = () => {
       </Link>
       <Link
         className={`${"nav_item"} ${
-          selectedItem === "/about/team" ? "nav_item_select" : ""
+          selectedItem === "/team" ? "nav_item_select" : ""
         }`}
         to="/team"
       >
@@ -24,7 +24,7 @@ const Navbar = () => {
       </Link>
       <Link
         className={`${"nav_item"} ${
-          selectedItem === "/about/proposal" ? "nav_item_select" : ""
+          selectedItem === "/proposal" ? "nav_item_select" : ""
         }`}
         to="/proposal"
       >
@@ -32,7 +32,7 @@ const Navbar = () => {
       </Link>
       <Link
         className={`${"nav_item"} ${
-          selectedItem === "/about/link" ? "nav_item_select" : ""
+          selectedItem === "/link" ? "nav_item_select" : ""
         }`}
         to="/link"
       >
