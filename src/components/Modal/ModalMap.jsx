@@ -33,7 +33,6 @@ const ModalMap = ({ lat, lng, mapVisible, initMap }) => {
               map,
               title: shelter.name,
               icon: {
-                // url: process.env.PUBLIC_URL + "/images/marker.png",
                 url: markerImg,
                 scaledSize: new window.google.maps.Size(40, 50),
                 origin: new window.google.maps.Point(0, 0),
