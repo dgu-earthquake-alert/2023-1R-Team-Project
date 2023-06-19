@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./footer.module.css";
 import { Modal, Button } from "react-bootstrap";
-import EarthquakeModal from "../Modal/EarthquakeModal";
+import EarthquakeModal from "../modal/EarthquakeModal";
 import { fetchEarthquakeData } from "../../utils/api";
 import { useMediaQuery } from "react-responsive";
 
@@ -11,21 +11,21 @@ const Footer = ({ isSidebarOpen }) => {
     loc: "",
     lat: "",
     lng: "",
-    mt: "",
+    mt: ""
   });
   const [modalData, setModalData] = useState({
     loc: "",
     lat: "",
     lng: "",
-    mt: "",
+    mt: ""
   });
 
   const isPC = useMediaQuery({
-    query: "(min-width:820px)",
+    query: "(min-width:820px)"
   });
 
   const isMobile = useMediaQuery({
-    query: "(max-width:819px)",
+    query: "(max-width:819px)"
   });
 
   const handleModalInputChange = (e, field) => {
@@ -54,7 +54,7 @@ const Footer = ({ isSidebarOpen }) => {
       loc: "",
       lat: "",
       lng: "",
-      mt: "",
+      mt: ""
     });
   };
 
