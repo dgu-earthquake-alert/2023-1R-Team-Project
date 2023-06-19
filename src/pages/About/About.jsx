@@ -26,7 +26,7 @@ const AboutMain = ({ map, setMap }) => {
 
       const newMap = new window.google.maps.Map(ref.current, {
         center: { lat: 37.569227, lng: 126.9777256 },
-        zoom: 16
+        zoom: 16,
       });
 
       /*       shelterData.forEach((shelter, index) => {

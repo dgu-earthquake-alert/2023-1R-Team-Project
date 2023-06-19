@@ -57,7 +57,7 @@ const data = [
       ec2,
       docker,
     ],
-    role: "프론트 백 연동 / 소셜로그인 모달 / 랜딩페이지(네비게이션, 링크페이지) / FE프로젝트 배포 \n\nOAuth2 개발 / 즐겨찾기 저장 api 개발",
+    role: "프론트 백 연동 / 소셜로그인 모달 / 랜딩페이지(네비게이션, 링크페이지) / FE프로젝트 배포 \nOAuth2 개발 / 즐겨찾기 저장 api 개발",
     github: "https://github.com/roberniro",
     img: hankyulImg,
   },
@@ -78,7 +78,7 @@ const data = [
       docker,
       firebase,
     ],
-    role: "팀장 / 지진 대피소 조회 페이지/ 지진 이력 조회 페이지 / FE&BE프로젝트 배포 \n\n백엔드 연동 test modal / Google Map Info / 지진 경보 백그라운드 푸시 알림 기능",
+    role: "팀장 / 지진 대피소 조회 페이지/ 지진 이력 조회 페이지 / FE&BE프로젝트 배포 \n백엔드 연동 test modal / Google Map Info / 지진 경보 백그라운드 푸시 알림 기능",
     github: "https://github.com/bin-pro",
     img: subinImg,
   },
@@ -97,7 +97,7 @@ const Team = () => {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="pb-5">
         {data.map((item, index) => (
           <Card key={index} data={item} />
         ))}
