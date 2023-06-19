@@ -38,15 +38,15 @@
 .nav_item {
   all: unset;
   flex-basis: 140px;
-  height: 100%;
+  height: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   color: #fff;
   transition: all 0.1s ease-in-out;
-  /* margin: 0 5px; */
+  margin: 0 5px;
 }
 
 .nav_item:last-child {
@@ -54,23 +54,24 @@
 }
 
 .nav_item:hover {
+  font-weight: bold;
+  color: #084298;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav_item_select {
   color: #fff;
   background-color: #052c65;
   /* border-radius: 10px; */
   cursor: pointer;
 }
 
-.nav_item_select {
-  font-weight: bold;
-  color: #084298;
-  background-color: #fff;
-  /* border-radius: 10px; */
-  cursor: pointer;
-}
-
 .nav_item_select:hover {
-  color: #084298;
-  background-color: #fff;
+  font-weight: 500;
+  color: #fff;
+  background-color: #052c65;
 }
 
 .nav_toggle {
