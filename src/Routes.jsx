@@ -1,4 +1,3 @@
-// App.jsx
 import { Routes, Route } from "react-router-dom";
 import Shelter from "./pages/Shelter/Shelter";
 import Record from "./pages/Record/Record";
@@ -8,19 +7,18 @@ import SubPage1 from "./pages/Rule/SubPage1";
 import SubPage2 from "./pages/Rule/SubPage2";
 import Error from "./pages/Error/Error";
 import Team from "./pages/About/Team";
+import Link from "./pages/About/Link/Link";
 
 const App = () => {
   return (
     <div className="root">
       <Routes>
-        {/* <Route path="/" element={<About />} />
-        <Route path="/about" element={<About />}>
+        <Route path="/" element={<Team />} />
+        <Route path="/about" element={<Team />}>
           <Route path="team" element={<Team />} />
-          <Route path="proposal" element={<Proposal />} />
+          <Route path="proposal" element={<Team />} />
           <Route path="link" element={<Link />} />
-        </Route> */}
-        <Route path="/team" element={<Team />} />
-
+        </Route>
         <Route path="/home" element={<Home />} />
         <Route path="/shelter" element={<Shelter />} />
         <Route path="/record" element={<Record />} />
@@ -28,6 +26,7 @@ const App = () => {
           <Route path="subpage1" element={<SubPage1 />} />
           <Route path="subpage2" element={<SubPage2 />} />
         </Route>
+
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
