@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/footer.module.css";
+import styles from "./footer.module.css";
 import { Modal, Button } from "react-bootstrap";
-import EarthquakeModal from "./modal/EarthquakeModal";
-import { fetchEarthquakeData } from "../utils/api";
+import EarthquakeModal from "../Modal/EarthquakeModal";
+import { fetchEarthquakeData } from "../../utils/api";
 import { useMediaQuery } from "react-responsive";
 
 const Footer = ({ isSidebarOpen }) => {
@@ -131,35 +131,37 @@ const Footer = ({ isSidebarOpen }) => {
             earthquakeData={earthquakeData}
           />
         )}
-      <footer className={`${styles.footer} ${isSidebarOpen && styles.open}`}>
-        <div className={styles.footer_container}>
-          <div className={styles.footer_item}>
-            <span className={styles.footer_item_title}>지진알리미</span>
-            <div>&copy;2023</div>
-          </div>
-          {isPC && (
-            <>
-              <div className={styles.footer_item}></div>
-              <div className={styles.footer_item}></div>
-            </>
-          )}
-          <div className={styles.footer_item}>
-            <Button
-              size="lg"
-              className="mb-2"
-              variant="dark"
-              onClick={() => setIsModalOpen(true)}
-            >
-              Test Modal
-            </Button>
-            <div>
-              loc: 동국대학교 <br />
-              lat: 37.55840227 <br />
-              lng: 126.99779874
+      {isPC && (
+        <footer className={`${styles.footer} ${isSidebarOpen && styles.open}`}>
+          <div className={styles.footer_container}>
+            <div className={styles.footer_item}>
+              <span className={styles.footer_item_title}>지진알리미</span>
+              <div style={{ fontSize: "15px" }}>&copy;2023</div>
+            </div>
+            {isPC && (
+              <>
+                <div className={styles.footer_item}></div>
+                <div className={styles.footer_item}></div>
+              </>
+            )}
+            <div className={styles.footer_item}>
+              <Button
+                size="lg"
+                className="mb-2"
+                variant="dark"
+                onClick={() => setIsModalOpen(true)}
+              >
+                Test Modal
+              </Button>
+              <div style={{ fontSize: "15px" }}>
+                loc: 동국대학교 <br />
+                lat: 37.55840227 <br />
+                lng: 126.99779874
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      )}
     </>
   );
 };
