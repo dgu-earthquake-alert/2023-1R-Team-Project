@@ -9,7 +9,7 @@ import SubPage2 from "./pages/Rule/SubPage2";
 import Link from "./pages/About/Link/Link";
 import About from "./pages/About/About";
 import Error from "./pages/Error/Error";
-import Team from "./pages/About/Team/Team";
+import Team from "./pages/About/Team";
 
 const App = () => {
   const [map, setMap] = useState(null);
@@ -18,11 +18,10 @@ const App = () => {
     <div className="root">
       <Routes>
         <Route path="/" element={<About map={map} setMap={setMap} />} />
-        <Route path="/about" element={<About map={map} setMap={setMap} />}>
-          <Route path="team" element={<Team />} />
-          <Route path="proposal" element={<Team />} />
-          <Route path="link" element={<Link />} />
-        </Route>
+        <Route path="/about" element={<About map={map} setMap={setMap} />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/proposal" element={<Team />} />
+        <Route path="/link" element={<Link />} />
         <Route path="/home" element={<Home map={map} setMap={setMap} />} />
         <Route path="/shelter" element={<Shelter />} />
         <Route path="/record" element={<Record />} />
