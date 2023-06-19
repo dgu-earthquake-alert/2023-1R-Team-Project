@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { fetchMapPlaceData } from "../../utils/api";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import markerImage from "../../assets/images/marker.png";
 import styles from "./styles/main.module.css";
 
