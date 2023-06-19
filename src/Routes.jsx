@@ -10,6 +10,7 @@ import Link from "./pages/About/Link/Link";
 import About from "./pages/About/About";
 import Error from "./pages/Error/Error";
 import Team from "./pages/About/Team";
+import Proposal from "./pages/About/Proposal";
 
 const App = () => {
   const [map, setMap] = useState(null);
@@ -19,7 +20,7 @@ const App = () => {
       <Route path="/" element={<About map={map} setMap={setMap} />} />
       <Route path="/about" element={<About map={map} setMap={setMap} />} />
       <Route path="/team" element={<Team />} />
-      <Route path="/proposal" element={<Team />} />
+      <Route path="/proposal" element={<Proposal />} />
       <Route path="/link" element={<Link />} />
       <Route path="/home" element={<Home map={map} setMap={setMap} />} />
       <Route path="/shelter" element={<Shelter />} />
