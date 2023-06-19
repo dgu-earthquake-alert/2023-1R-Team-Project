@@ -7,12 +7,14 @@ const Card = () => {
       <div className="card">
         <div className="container">
           <span className="title">SITE</span>
-          <span
-            className="content"
-            href="http://3.34.76.221:3000/home"
-            alt="지진알리미-FE"
-          >
-            <a className="item">지진알리미-FE</a>
+          <span className="content">
+            <a
+              className="item"
+              href="http://3.34.76.221:3000/home"
+              alt="지진알리미-FE"
+            >
+              지진알리미-FE
+            </a>
             <a
               className="item"
               href="https://earthquake-alert.site/"
