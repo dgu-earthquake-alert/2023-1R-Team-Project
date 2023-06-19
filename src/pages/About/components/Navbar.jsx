@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="nav">
-      <Link className="nav_title" to="/home">
+      <Link className="nav_title" to="/">
         지진알리미
       </Link>
       <Link

@@ -5,7 +5,7 @@
 
 .card {
   display: flex;
-  align-items: start;
+  /* align-items: start; */
   width: 25vw;
   min-width: 350px;
   margin-top: 20px;
