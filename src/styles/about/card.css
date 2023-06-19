@@ -17,3 +17,14 @@ body{
   width: 350px;
   height: 350px;
 }
+
+.img_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backend_text {
+  color: rgb(81, 81, 81);
+  font-style: italic;
+}

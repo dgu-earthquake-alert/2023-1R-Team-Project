@@ -3,11 +3,13 @@ import "../../../styles/about/card.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Card = ({ data }) => {
+  const roleLines = data.role.split("\n");
+
   return (
     <div>
       <div className="card mb-3 card_box">
         <div className="row g-0">
-          <div className="col-md-4">
+          <div className="col-md-4 img_wrapper">
             <img src={data.img} className="img-fluid img rounded-circle" />
           </div>
           <div className="col-md-8">
@@ -19,7 +21,19 @@ const Card = ({ data }) => {
               {data.skills.map((skill, index) => (
                 <img key={index} src={skill} alt="Skill" />
               ))}
-              <p className="card-text">Role: {data.role}</p>
+              <p className="card-text">
+  Role: <br />
+  {roleLines.map((line, index) => (
+    <span key={index}>
+      {index === 2 ? (
+        <span className="backend_text">{line}</span>
+      ) : (
+        <>{line}</>
+      )}
+      <br />
+    </span>
+  ))}
+</p>
               <a
                 href={data.github}
                 target="_blank"

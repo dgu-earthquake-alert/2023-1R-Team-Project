@@ -28,14 +28,16 @@ const docker =
   "https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white";
 const firebase =
   "https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white";
+const figma =
+  "https://img.shields.io/badge/Figma-F24E1E.svg?&style=for-the-badge&logo=Figma&logoColor=white";
 
 const data = [
   {
     name: "공소연",
     studentId: "2020110210",
     dept: "경제학과",
-    skills: [html5, css, js, react],
-    role: "Developer",
+    skills: [html5, css, js, react, figma],
+    role: "랜딩페이지 / 사이드바(현재위치 보기, 위치 기반 가까운 대피소 보기, 위치 저장 기능 등) \n지도에 현재위치 마커출력 / 전체적인 디자인 및 퍼블리싱",
     github: "https://github.com/Kong-E",
     img: soyeonImg,
   },
@@ -55,7 +57,7 @@ const data = [
       ec2,
       docker,
     ],
-    role: "Developer",
+    role: "OAuth2 개발 / 즐겨찾기 저장 api 개발\n\n프론트 백엔드 연동 / 랜딩페이지 링크 서브페이지 ",
     github: "https://github.com/roberniro",
     img: hankyulImg,
   },
@@ -76,7 +78,7 @@ const data = [
       docker,
       firebase,
     ],
-    role: "Developer",
+    role: "팀장 / 지진 대피소 조회 페이지/ 지진 이력 조회 페이지 \n\n백엔드 연동 test modal / Google Map Info / 지진 경보 백그라운드 푸시 알림 기능",
     github: "https://github.com/bin-pro",
     img: subinImg,
   },
@@ -85,7 +87,7 @@ const data = [
     studentId: "2017112191",
     dept: "정보통신공학과",
     skills: [html5, css, js, react],
-    role: "Developer",
+    role: "팀 소개 페이지 / 행동수칙 페이지 / 에러 페이지 \n지도에 대피소 마커출력 / test modal",
     github: "https://github.com/starht",
     img: byulImg,
   },

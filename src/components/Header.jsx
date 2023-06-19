@@ -20,7 +20,7 @@ const Header = ({ isSidebarOpen, toggleHeader }) => {
     <>
       <PC>
         <nav className={`${styles.nav} ${isSidebarOpen ? styles.open : ""}`}>
-          <Link to="/" className={styles.nav_title}>
+          <Link to="/home" className={styles.nav_title}>
             지진알리미
           </Link>
           <Link
