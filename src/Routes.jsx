@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import Rule from "./pages/Rule/Rule";
 import SubPage1 from "./pages/Rule/SubPage1";
 import SubPage2 from "./pages/Rule/SubPage2";
-import About from "./pages/About";
+import About from "./pages/About/About";
 
 const App = () => {
   const [map, setMap] = useState(null);

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/footer.module.css";
+import styles from "./footer.module.css";
 import { Modal, Button } from "react-bootstrap";
-import EarthquakeModal from "./modal/EarthquakeModal";
-import { fetchEarthquakeData } from "../utils/api";
+import EarthquakeModal from "../modal/EarthquakeModal";
+import { fetchEarthquakeData } from "../../utils/api";
 import { useMediaQuery } from "react-responsive";
 
 const Footer = ({ isSidebarOpen }) => {

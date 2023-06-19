@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import styles from "../../../../styles/home/sidebar.module.css";
+import styles from "./styles/sidebar.module.css";
 import { fetchMapPlaceData } from "../../../../utils/api";
 import { useMediaQuery } from "react-responsive";
 import Modal from "./Modal";

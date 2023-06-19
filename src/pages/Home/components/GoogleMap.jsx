@@ -3,7 +3,7 @@ import DistrictSelector from "./DistrictSelector";
 import { fetchMapPlaceData } from "../../../utils/api";
 import markerImage from "../../../assets/images/marker.png";
 import currentMarkerImage from "../../../assets/images/current.svg";
-import styles from "../../../styles/home/home.module.css";
+import styles from "../styles/home.module.css";
 
 const GoogleMap = ({
   lat,

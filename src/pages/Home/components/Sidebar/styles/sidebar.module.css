@@ -61,7 +61,7 @@
   left: 15px;
   width: 32px;
   height: 32px;
-  background-image: url("../../assets/icon/refresh.svg");
+  background-image: url("../../../../../assets/icon/refresh.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px;
@@ -89,7 +89,7 @@
   right: 15px;
   width: 32px;
   height: 32px;
-  background-image: url("../../assets/icon/add.svg");
+  background-image: url("../../../../../assets/icon/add.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px;
@@ -104,7 +104,7 @@
   right: 45px;
   width: 32px;
   height: 32px;
-  background-image: url("../../assets/icon/remove.svg");
+  background-image: url("../../../../../assets/icon/remove.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px;

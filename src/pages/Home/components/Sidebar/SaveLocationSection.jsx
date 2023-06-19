@@ -1,4 +1,4 @@
-import styles from "../../../../styles/home/sidebar.module.css";
+import styles from "./styles/sidebar.module.css";
 import remove from "../../../../assets/icon/remove-filled.svg";
 
 const SaveLocationSection = ({

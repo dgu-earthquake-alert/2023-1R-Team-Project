@@ -1,4 +1,4 @@
-import styles from "../../../../styles/home/sidebar.module.css";
+import styles from "./styles/sidebar.module.css";
 
 const CurrentLocationSection = ({
   isMobile,
