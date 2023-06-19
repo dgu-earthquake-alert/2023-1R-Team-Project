@@ -2,6 +2,6 @@ version: "3.0"
 
 services:
   web:
-    image: roberniro/2023-1r-team-project:2.0
+    image: roberniro/2023-1r-team-project:3.0
     ports:
       - "80:3000"
