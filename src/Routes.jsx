@@ -7,17 +7,19 @@ import Rule from "./pages/Rule/Rule";
 import SubPage1 from "./pages/Rule/SubPage1";
 import SubPage2 from "./pages/Rule/SubPage2";
 import Error from "./pages/Error/Error";
+import Team from "./pages/About/Team";
 
 const App = () => {
   return (
     <div className="root">
       <Routes>
-        <Route path="/" element={<About />} />
+        {/* <Route path="/" element={<About />} />
         <Route path="/about" element={<About />}>
           <Route path="team" element={<Team />} />
           <Route path="proposal" element={<Proposal />} />
           <Route path="link" element={<Link />} />
-        </Route>
+        </Route> */}
+        <Route path="/team" element={<Team />} />
 
         <Route path="/home" element={<Home />} />
         <Route path="/shelter" element={<Shelter />} />

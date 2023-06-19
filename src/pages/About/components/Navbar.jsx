@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../../styles/about/Navbar.css";
+import "../../../styles/about/Navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
@@ -16,9 +16,9 @@ const Navbar = () => {
       </Link>
       <Link
         className={`${"nav_item"} ${
-          selectedItem === "/about" ? "nav_item_select" : ""
+          selectedItem === "/about/team" ? "nav_item_select" : ""
         }`}
-        to="about"
+        to="about/team"
       >
         팀원 소개
       </Link>
