@@ -59,10 +59,10 @@ const AboutMain = ({ map, setMap }) => {
       <main className={styles.main_title}>
         지진알리미와 함께 서울시 대피소를 손쉽게 조회해보세요.
       </main>
-      <Link to="/" className={styles.main_button}>
+      <Link to="/home" className={styles.main_button}>
         바로가기&nbsp;&nbsp;&nbsp;&nbsp;&gt;
       </Link>
-      <Link to="/about" className={styles.about_button}>
+      <Link to="/about/team" className={styles.about_button}>
         About
       </Link>
       <img src={markerImage} alt="marker" className={styles.marker} />

@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import Rule from "./pages/Rule/Rule";
 import SubPage1 from "./pages/Rule/SubPage1";
 import SubPage2 from "./pages/Rule/SubPage2";
-import AboutMain from "./pages/AboutMain";
+import About from "./pages/About";
 
 const App = () => {
   const [map, setMap] = useState(null);
@@ -14,13 +14,12 @@ const App = () => {
   return (
     <div className="root">
       <Routes>
-        <Route path="/about">
-          <Route
-            path="main"
-            element={<AboutMain map={map} setMap={setMap} />}
-          />
-        </Route>
-        <Route path="/" element={<Home map={map} setMap={setMap} />} />
+        <Route path="/" element={<About map={map} setMap={setMap} />} />
+        <Route
+          path="/about"
+          element={<About map={map} setMap={setMap} />}
+        ></Route>
+        <Route path="/home" element={<Home map={map} setMap={setMap} />} />
         <Route path="/shelter" element={<Shelter />} />
         <Route path="/record" element={<Record />} />
         <Route path="/rule" element={<Rule />}>
