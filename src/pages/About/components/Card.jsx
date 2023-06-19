@@ -10,7 +10,7 @@ const Card = ({ data }) => {
       <div className="card mb-3 card_box">
         <div className="row g-0">
           <div className="col-md-4 img_wrapper">
-            <img src={data.img} className="img-fluid img rounded-circle" />
+            <img src={data.img} className="img-fluid rounded-circle" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
