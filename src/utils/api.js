@@ -58,13 +58,13 @@ export const fetchMapPlaceData = async () => {
 
       return combinedShelterData;
     } else {
-      alert(
+      /*       alert(
         `API 요청 중 문제가 발생했습니다: ${outdoorData.TlEtqkP.RESULT.MESSAGE}`
-      );
+      ); */
     }
   } catch (error) {
     console.error(error.message);
-    alert(`API 요청 중 에러가 발생했습니다: ${error.message}`);
+    /*     alert(`API 요청 중 에러가 발생했습니다: ${error.message}`); */
   }
 };
 
@@ -87,12 +87,12 @@ export const fetchShelterTableData = async (gu, dong) => {
       });
       return filteredData;
     } else {
-      alert(`API 요청 중 문제가 발생했습니다: ${data.TlEtqkP.RESULT.MESSAGE}`);
+      // alert(`API 요청 중 문제가 발생했습니다: ${data.TlEtqkP.RESULT.MESSAGE}`);
       return [];
     }
   } catch (error) {
     console.error(error.message);
-    alert(`API 요청 중 에러가 발생했습니다: ${error.message}`);
+    // alert(`API 요청 중 에러가 발생했습니다: ${error.message}`);
     return [];
   }
 };
@@ -130,14 +130,14 @@ export const fetchRecordTableData = async (si, startDate, endDate) => {
       });
       return filteredData;
     } else {
-      alert(
+      /*       alert(
         `API 요청 중 문제가 발생했습니다: ${data.TbEqkKenvinfo.RESULT.MESSAGE}`
-      );
+      ); */
       return [];
     }
   } catch (error) {
     console.error(error.message);
-    alert(`API 요청 중 에러가 발생했습니다: ${error.message}`);
+    // alert(`API 요청 중 에러가 발생했습니다: ${error.message}`);
     return [];
   }
 };
